@@ -14,4 +14,6 @@ def max_digit(inarr):
     print(int(largest_num[:3]), end="")
     print(",",end="")
     print(combinations)
-max_digit([1,2,1,4,7])
+temp=input("Enter the digits separated by comma")
+digits=temp.split(",")
+max_digit(digits)
