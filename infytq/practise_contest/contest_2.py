@@ -7,13 +7,13 @@ import math
 def max_digit(inarr):
     length=len(inarr)
     largest_num=""
-    combinations=(math.factorial(length)//(math.factorial(length-3)))
+    numbers_formed=(math.factorial(length)//(math.factorial(length-3)))
     inarr.sort(reverse=True)
     for i in inarr:
         largest_num+=str(i)
     print(int(largest_num[:3]), end="")
     print(",",end="")
-    print(combinations)
+    print(numbers_formed)
 temp=input("Enter the digits separated by comma")
 digits=temp.split(",")
 max_digit(digits)
